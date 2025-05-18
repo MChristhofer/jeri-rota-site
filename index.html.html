@@ -1,42 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeri Rota</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeri Rota - Passeios em Jericoacoara</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 <body>
+
   <header>
-    <img src="assets/logo.png" alt="Logo Jeri Rota" class="logo">
+    <img src="assets/logo.png" alt="Jeri Rota" class="logo" />
     <nav>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
+      <ul>
+        <li><a href="#hero">Início</a></li>
+        <li><a href="#passeios">Passeios</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
   </header>
 
   <section id="hero">
-    <h1>Bem-vindo à Jeri Rota</h1>
-    <p>Explore Jericoacoara com quem conhece!</p>
+    <div class="hero-text">
+      <h1>Explore Jeri com a Jeri Rota!</h1>
+      <p>Descubra os melhores passeios em Jericoacoara com conforto e segurança</p>
+    </div>
   </section>
 
-  <section id="servicos">
-    <h2>Nossos Passeios</h2>
-    <ul>
-      <li>🚙 Lagoa do Paraíso</li>
-      <li>🏖️ Pedra Furada</li>
-      <li>🌅 Pôr do sol na Duna</li>
-    </ul>
+  <section id="passeios">
+    <h2>Passeios Disponíveis</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="assets/passeio1.jpg" alt="Lagoa do Paraíso" />
+        <h3>Lagoa do Paraíso</h3>
+        <p>Águas cristalinas e redes dentro da água para relaxar.</p>
+      </div>
+      <div class="card">
+        <img src="assets/passeio1.jpg" alt="Pedra Furada" />
+        <h3>Pedra Furada</h3>
+        <p>O cartão postal mais famoso de Jeri.</p>
+      </div>
+      <div class="card">
+        <img src="assets/passeio1.jpg" alt="Duna do Pôr do Sol" />
+        <h3>Duna do Pôr do Sol</h3>
+        <p>Um espetáculo da natureza que você não pode perder.</p>
+      </div>
+    </div>
   </section>
 
   <section id="contato">
-    <h2>Fale com a gente!</h2>
-    <a href="https://wa.me/SEUNUMERO" target="_blank">📱 WhatsApp</a>
+    <h2>Fale Conosco</h2>
+    <p>Entre em contato agora e reserve seu passeio:</p>
+    <a href="https://wa.me/SEUNUMERO" class="whatsapp-btn" target="_blank">Chamar no WhatsApp</a>
   </section>
 
   <footer>
-    <p>&copy; 2025 Jeri Rota - Todos os direitos reservados</p>
+    <p>&copy; 2025 Jeri Rota. Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/SEUNUMERO" class="float-whatsapp" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+  </a>
+
 </body>
 </html>
