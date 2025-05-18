@@ -3,9 +3,12 @@
 body { font-family: 'Segoe UI', sans-serif; background: #fdfdfd; color: #333; line-height: 1.6; }
 .container { max-width: 1100px; margin: auto; padding: 40px 20px; }
 header { background: #00bfa6; position: sticky; top: 0; z-index: 999; }
+.header-container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; padding: 10px 20px; }
 .logo { height: 50px; }
-nav ul { list-style: none; display: flex; gap: 20px; justify-content: center; padding: 10px 0; }
-nav a { color: white; text-decoration: none; font-weight: bold; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; font-weight: bold; transition: 0.3s; }
+nav a:hover { color: #ffe600; }
+#mobile-menu-toggle { display: none; font-size: 28px; color: white; cursor: pointer; }
 #hero { background: url('assets/banner.jpg') no-repeat center center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
 .hero-text { background: rgba(0,0,0,0.4); padding: 40px; border-radius: 10px; }
 .hero-text h1 { font-size: 50px; }
@@ -20,3 +23,9 @@ nav a { color: white; text-decoration: none; font-weight: bold; }
 footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
 .float-whatsapp { position: fixed; bottom: 25px; right: 25px; width: 60px; height: 60px; z-index: 1000; }
 .float-whatsapp img { width: 100%; }
+
+@media (max-width: 768px) {
+  nav ul { display: none; flex-direction: column; background: #00bfa6; position: absolute; top: 60px; right: 10px; width: 200px; padding: 10px; border-radius: 8px; }
+  nav ul.show { display: flex; }
+  #mobile-menu-toggle { display: block; }
+}
