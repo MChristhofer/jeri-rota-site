@@ -1,9 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.getElementById('mobile-menu-toggle');
-  const links = document.getElementById('nav-links');
+  const mobileNav = document.getElementById('mobile-nav');
 
   toggle.addEventListener('click', () => {
-    links.classList.toggle('show');
+    mobileNav.classList.toggle('show');
   });
 });

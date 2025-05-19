@@ -1,80 +1,96 @@
+/* 🔷 RESET BÁSICO */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 🔷 TOPO PRETO COM CONTATOS */
 .top-bar {
   background-color: #000;
   color: #fff;
+  font-size: 14px;
+  z-index: 1030;
 }
 
+/* 🔷 CABEÇALHO PRINCIPAL */
 .main-header {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  z-index: 1020;
+  transition: box-shadow 0.3s ease;
+  border-bottom: 1px solid #eee;
 }
 
-.nav-menu a {
-  color: #000;
+/* 🔷 NAVEGAÇÃO DESKTOP */
+.main-nav .nav-link {
+  color: #333;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
+.main-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* 🔷 MENU HAMBÚRGUER (MOBILE) */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle img {
+  width: 28px;
+}
+
+/* 🔷 MENU MOBILE */
+.mobile-nav {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+.mobile-nav.show {
+  display: flex !important;
+}
+
+/* 🔷 HERO */
 .carousel-item img {
   height: 500px;
   object-fit: cover;
 }
-.elementor-menu {
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+
+/* 🔷 RODAPÉ */
+footer {
+  background-color: #f8f9fa;
+  font-size: 14px;
 }
 
-.menu-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+/* 🔷 WHATSAPP FLUTUANTE */
+.float-whatsapp img {
+  z-index: 1050;
 }
 
-.nav-links a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  cursor: pointer;
-}
-
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: white;
-  padding: 10px 20px;
-}
-
-.mobile-menu a {
-  padding: 10px 0;
-  border-bottom: 1px solid #eee;
-  color: #333;
-  text-decoration: none;
-}
-
+/* 🔷 RESPONSIVO */
 @media (max-width: 768px) {
-  .nav-links {
-    display: none;
+  .main-nav {
+    display: none !important;
   }
 
   .menu-toggle {
     display: block;
   }
 
-  .mobile-menu.show {
+  .mobile-nav {
+    display: none;
+  }
+
+  .mobile-nav.show {
     display: flex;
   }
 }
