@@ -1,133 +1,97 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeri Rota - Passeios em Jericoacoara</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <script defer src="script.js"></script>
-
-  <!-- BOOTSTRAP CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-  <!-- TOPO PRETO -->
-  <div class="top-bar">
-    <div class="top-content">
-
-      <!-- LADO ESQUERDO: TELEFONE + EMAIL -->
-      <div class="top-left">
-        <a href="tel:+5588981588365" class="top-item">
-          <img src="assets/icones/phone.png" alt="Telefone" />
-          <span>(88) 98158-8365</span>
-        </a>
-        <a href="mailto:almeidatransfer@gmail.com" class="top-item">
-          <img src="assets/icones/email.png" alt="Email" />
-          <span>almeidatransfer@gmail.com</span>
-        </a>
-      </div>
-
-      <!-- LADO DIREITO: REDES + BOTÃO WHATSAPP -->
-      <div class="top-right">
-        <a href="https://instagram.com/almeidatransfer" target="_blank" class="social-icon">
-          <img src="assets/icones/instagram.png" alt="Instagram" />
-        </a>
-        <a href="https://www.google.com/search?q=almeida+transfer+jericoacoara" target="_blank" class="social-icon">
-          <img src="assets/icones/google.png" alt="Google" />
-        </a>
-        <a href="https://www.tripadvisor.com.br/Attraction_Review-g2572097-d26800122-Reviews-Almeida_Transfer" target="_blank" class="social-icon">
-          <img src="assets/icones/tripadvisor.png" alt="TripAdvisor" />
-        </a>
-        <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn-reserve">
-          Reserve Online
-        </a>
-      </div>
-
+<!-- 🔷 TOPO PRETO COM CONTATOS E ÍCONES -->
+<div class="top-bar">
+  <div class="container d-flex justify-content-between align-items-center py-2 text-white">
+    <div class="d-flex gap-4 small">
+      <span><img src="assets/icones/phone.png" alt="Tel" width="16"> (88) 98158-8365</span>
+      <span><img src="assets/icones/email.png" alt="Email" width="16"> almeidatransfer@gmail.com</span>
+    </div>
+    <div class="d-flex align-items-center gap-3">
+      <a href="https://instagram.com/almeidatransfer" target="_blank"><img src="assets/icones/instagram.png" width="20" alt="Instagram"></a>
+      <a href="https://www.google.com/search?q=almeida+transfer+jericoacoara" target="_blank"><img src="assets/icones/google.png" width="20" alt="Google"></a>
+      <a href="https://www.tripadvisor.com.br/Attraction_Review-g2572097-d26800122-Reviews-Almeida_Transfer" target="_blank"><img src="assets/icones/tripadvisor.png" width="20" alt="TripAdvisor"></a>
+      <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn btn-light btn-sm ms-2">Reserve Online</a>
     </div>
   </div>
+</div>
 
-  <!-- CABEÇALHO PRINCIPAL COM LOGO + MENU -->
-  <header class="main-header">
-    <div class="header-container">
-      <a href="index.html">
-        <img src="assets/logo.png" alt="Logo Jeri Rota" class="logo" />
-      </a>
-      <nav class="nav-menu">
-        <a href="#hero">Início</a>
-        <a href="#sobre">Quem Somos</a>
-        <a href="#servicos">Serviços</a>
-        <a href="#avaliacoes">Avaliações</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
-  </header>
+<!-- 🔷 CABEÇALHO PRINCIPAL -->
+<header class="main-header py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="index.html">
+      <img src="assets/logo.png" alt="Logo Jeri Rota" height="60">
+    </a>
+    <nav>
+      <a href="#hero" class="mx-2 text-dark text-decoration-none">Início</a>
+      <a href="#sobre" class="mx-2 text-dark text-decoration-none">Quem Somos</a>
+      <a href="#servicos" class="mx-2 text-dark text-decoration-none">Serviços</a>
+      <a href="#avaliacoes" class="mx-2 text-dark text-decoration-none">Avaliações</a>
+      <a href="#contato" class="mx-2 text-dark text-decoration-none">Contato</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- HERO COM CARROSSEL -->
-  <section id="hero">
-    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="assets/banner1.jpg" class="d-block w-100" alt="Imagem 1">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Transfer para Jericoacoara</h1>
-            <p>Conforto e segurança até o paraíso</p>
-            <a href="https://wa.me/558882274666" class="btn btn-light">Reserve Agora</a>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="assets/banner2.jpg" class="d-block w-100" alt="Imagem 2">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Passeios Incríveis</h1>
-            <p>Descubra cada canto de Jeri</p>
-            <a href="https://wa.me/558882274666" class="btn btn-light">Fale Conosco</a>
-          </div>
-        </div>
+<!-- 🔷 HERO CARROSSEL -->
+<section id="hero">
+  <div id="carouselHero" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/banner1.jpg" class="d-block w-100" alt="Banner 1">
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-  </section>
-
-  <!-- SEÇÕES -->
-  <section id="sobre" class="container">
-    <h2>Quem Somos</h2>
-    <p>Somos a Jeri Rota, uma empresa especializada em passeios turísticos em Jericoacoara. Nossa missão é proporcionar experiências inesquecíveis com segurança, conforto e alegria!</p>
-  </section>
-
-  <section id="servicos" class="container">
-    <h2>Serviços</h2>
-    <div class="servicos-grid">
-      <div class="servico">
-        <img src="assets/icones/buggy.png" alt="Passeios de Buggy" />
-        <h3>Passeios de Buggy</h3>
-        <p>Explore as dunas, lagoas e praias com nossos buggys confortáveis.</p>
-      </div>
-      <div class="servico">
-        <img src="assets/icones/lagoa.png" alt="Lagoa do Paraíso" />
-        <h3>Lagoa do Paraíso</h3>
-        <p>Um dos lugares mais lindos do Brasil, com redes dentro da água.</p>
-      </div>
-      <div class="servico">
-        <img src="assets/icones/por-do-sol.png" alt="Pôr do Sol" />
-        <h3>Pôr do Sol</h3>
-        <p>Veja o sol desaparecer no mar em um dos pontos mais altos de Jeri.</p>
+      <div class="carousel-item">
+        <img src="assets/banner2.jpg" class="d-block w-100" alt="Banner 2">
       </div>
     </div>
-  </section>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
 
-  <section id="avaliacoes" class="container">
-    <h2>Avaliações</h2>
-    <div class="avaliacoes-grid">
-      <div class="avaliacao">
-        <p>"Simplesmente maravilhoso! Atendimento impecável."</p>
-        <strong>— Ana P.</strong>
-      </div>
-      <div class="avaliacao">
-        <p>"Passeio completo, guia super atencioso. Voltarei com certeza!"</p>
-        <strong>— Bruno C.</strong>
+<!-- 🔷 SEÇÕES -->
+<section id="sobre" class="container my-5">
+  <h2>Quem Somos</h2>
+  <p>Somos a Jeri Rota, uma empresa especializada em passeios turísticos em Jericoacoara.</p>
+</section>
+
+<section id="servicos" class="container my-5">
+  <h2>Serviços</h2>
+  <!-- Adicione seu conteúdo de serviços aqui -->
+</section>
+
+<section id="avaliacoes" class="container my-5">
+  <h2>Avaliações</h2>
+  <!-- Adicione suas avaliações aqui -->
+</section>
+
+<section id="contato" class="container my-5">
+  <h2>Contato</h2>
+  <a href="https://wa.me/558882274666" class="btn btn-success">Chamar no WhatsApp</a>
+</section>
+
+<footer class="text-center py-4 bg-light mt-5">
+  <p>&copy; 2025 Jeri Rota. Todos os direitos reservados.</p>
+</footer>
+
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/558882274666" class="float-whatsapp" target="_blank">
+  <img src="assets/icones/whatsapp.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 60px;">
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
