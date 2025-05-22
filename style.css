@@ -27,14 +27,29 @@ a {
 }
 
 /* 🔷 NAVEGAÇÃO DESKTOP */
+/* Efeito linha ao passar o mouse */
 .main-nav .nav-link {
+  position: relative;
+  padding-bottom: 4px;
   color: #333;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
-.main-nav .nav-link:hover {
-  color: #007bff;
+.main-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #e91e63; /* rosa */
+  transition: width 0.3s ease;
+}
+
+.main-nav .nav-link:hover::after,
+.main-nav .nav-link.active::after {
+  width: 100%;
 }
 
 /* 🔷 MENU HAMBÚRGUER (MOBILE) */
