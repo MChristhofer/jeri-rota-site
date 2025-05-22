@@ -110,3 +110,18 @@ footer {
 .logo img:hover {
   animation: balanco-lateral 0.6s ease-in-out;
 }
+/* 🔷 BOTÃO RESERVA AO LADO DO MENU */
+.btn-primary {
+  background-color: #e91e63; /* Rosa vibrante */
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 4px;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d81b60;
+  transform: scale(1.05);
+}
