@@ -43,13 +43,16 @@ a {
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #e91e63; /* rosa */
+  background-color: #ec8714; /* Laranja */
   transition: width 0.3s ease;
 }
 
 .main-nav .nav-link:hover::after,
 .main-nav .nav-link.active::after {
   width: 100%;
+}
+.main-nav .nav-link.active {
+  color: #ff9800; /* laranja vibrante */
 }
 
 /* 🔷 MENU HAMBÚRGUER (MOBILE) */
