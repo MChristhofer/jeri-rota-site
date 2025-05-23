@@ -3,30 +3,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const navLinks = document.querySelectorAll(".main-nav .nav-link");
 
   function updateActiveLink() {
-    let closestSection = null;
-    let closestDistance = Number.POSITIVE_INFINITY;
+    let currentSectionId = "";
 
     sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
-      const distance = Math.abs(rect.top);
-      if (distance < closestDistance && rect.top <= window.innerHeight / 2) {
-        closestSection = section;
-        closestDistance = distance;
+      const sectionTop = section.offsetTop - 120; // margem superior
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        currentSectionId = section.getAttribute("id");
       }
     });
 
     navLinks.forEach((link) => {
       link.classList.remove("active");
-      if (
-        closestSection &&
-        link.getAttribute("href").includes(closestSection.getAttribute("id"))
-      ) {
+      if (link.getAttribute("href") === `#${currentSectionId}`) {
         link.classList.add("active");
       }
     });
   }
 
-  // Marca o link como ativo quando clicado
+  // Atualiza ao clicar também
   navLinks.forEach((link) => {
     link.addEventListener("click", function () {
       navLinks.forEach((lnk) => lnk.classList.remove("active"));
@@ -35,4 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   window.addEventListener("scroll", updateActiveLink);
+  updateActiveLink(); // Força verificação ao carregar
 });
