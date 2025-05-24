@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- TOPO PRETO COM CONTATOS E ÍCONES -->
+  <!-- TOPO E MENU (igual em todas as páginas) -->
   <div class="top-bar sticky-top bg-dark text-white">
     <div class="container d-flex justify-content-between align-items-center py-2">
       <div class="d-flex gap-4 small">
@@ -25,13 +25,11 @@
     </div>
   </div>
 
-  <!-- CABEÇALHO PRINCIPAL -->
   <header class="main-header sticky-top bg-white shadow-sm">
     <div class="container d-flex justify-content-between align-items-center py-3">
       <a href="index.html" class="logo">
         <img src="assets/logo.png" alt="Logo Jeri Rota" height="60" />
       </a>
-
       <div class="d-none d-md-flex align-items-center gap-4">
         <nav class="main-nav d-flex gap-3">
           <a href="index.html" class="nav-link">Início</a>
@@ -42,12 +40,10 @@
         </nav>
         <a href="https://wa.me/558882274666" class="btn btn-primary">Reserva Online</a>
       </div>
-
       <button class="menu-toggle d-md-none border-0 bg-transparent">
         <img src="assets/icones/menu.png" alt="Menu" width="30" />
       </button>
     </div>
-
     <div class="mobile-nav d-md-none d-none flex-column text-center bg-white px-4 pb-3">
       <a href="index.html" class="nav-link py-2">Início</a>
       <a href="sobre.html" class="nav-link py-2 active">Quem Somos</a>
@@ -57,36 +53,20 @@
     </div>
   </header>
 
-  <!-- BANNER EXCLUSIVO DA PÁGINA SOBRE -->
-  <section id="hero">
-    <img src="assets/banner-sobre.jpg" class="d-block w-100" alt="Banner Quem Somos" style="max-height: 400px; object-fit: cover;" />
+  <!-- BANNER EXCLUSIVO PARA A PÁGINA SOBRE -->
+  <section id="banner" class="mb-5">
+    <img src="assets/banner-sobre.jpg" alt="Banner Quem Somos" class="img-fluid w-100" style="max-height: 400px; object-fit: cover;" />
   </section>
 
-  <!-- CONTEÚDO DA PÁGINA SOBRE -->
-  <section class="container my-5">
-    <h2>Quem Somos</h2>
-    <p>
-      A Jeri Rota é uma empresa especializada em transfer e passeios turísticos na região de Jericoacoara.
-      Nosso compromisso é oferecer conforto, segurança e experiências inesquecíveis para você explorar as belezas naturais e culturais dessa região única.
-    </p>
-    <p>
-      Contamos com uma equipe dedicada e veículos confortáveis, garantindo um atendimento personalizado e qualidade em todos os serviços prestados.
-    </p>
-
-    <div class="row mt-4">
-      <div class="col-md-6">
-        <img src="assets/sobre-equipe.jpg" alt="Equipe Jeri Rota" class="img-fluid rounded" />
-      </div>
-      <div class="col-md-6 d-flex align-items-center">
-        <p>
-          Estamos prontos para transformar sua viagem em uma experiência memorável, oferecendo roteiros personalizados, passeios exclusivos e atendimento próximo.
-          Venha conhecer Jericoacoara com a gente!
-        </p>
-      </div>
-    </div>
+  <!-- CONTEÚDO EXCLUSIVO DA PÁGINA SOBRE -->
+  <section class="container mb-5">
+    <h1>Quem Somos</h1>
+    <p>Somos a Jeri Rota, uma empresa especializada em passeios turísticos em Jericoacoara...</p>
+    <p>Aqui você pode contar mais sobre a história, missão, visão, valores, e tudo que quiser destacar sobre a empresa.</p>
+    <img src="assets/equipe.jpg" alt="Equipe Jeri Rota" class="img-fluid my-3" />
   </section>
 
-  <!-- RODAPÉ -->
+  <!-- RODAPÉ IGUAL EM TODAS AS PÁGINAS -->
   <footer class="bg-dark text-white pt-4">
     <div class="container">
       <div class="row">
@@ -125,7 +105,7 @@
     </div>
   </footer>
 
-  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <!-- BOTÃO WHATSAPP FIXO -->
   <a href="https://wa.me/558882274666" class="float-whatsapp" target="_blank">
     <img src="assets/icones/whatsapp.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 60px;" />
   </a>
