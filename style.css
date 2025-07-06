@@ -174,19 +174,18 @@ footer {
   transform: translateY(0);
 }
 .btn-reserve {
-  background-color: #f7941d;  /* Laranja igual à imagem */
+  background-color: #f47c00; /* Laranja vibrante igual ao Almeida Transfer */
   color: #fff;
   font-weight: bold;
-  padding: 10px 24px;
+  padding: 10px 22px;
   border: none;
   border-radius: 4px;
-  box-shadow: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
   font-size: 16px;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-reserve:hover {
-  background-color: #e07e00;  /* Um tom mais escuro no hover */
+  background-color: #d96800; /* Tom mais escuro no hover */
   transform: scale(1.05);
 }
-
