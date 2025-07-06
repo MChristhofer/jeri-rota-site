@@ -77,10 +77,15 @@ a {
   display: flex !important;
 }
 
-/* 🔷 HERO */
+/* 🔷 HERO - IMAGENS TELA CHEIA */
 .carousel-item img {
-  height: 500px;
-  object-fit: cover;
+  height: 100vh;         /* Altura total da tela */
+  object-fit: cover;     /* Imagem cobre sem distorcer */
+}
+.carousel-caption {
+  bottom: 0;
+  top: 0;
+  padding: 2rem;
 }
 
 /* 🔷 RODAPÉ */
