@@ -37,102 +37,30 @@
       <nav class="main-nav d-none d-md-flex align-items-center gap-3">
   <a href="index.html" class="nav-link">Início</a>
   <a href="sobre.html" class="nav-link">Quem Somos</a>
-  <a href="#servicos" class="nav-link">Serviços</a>
-  <a href="#avaliacoes" class="nav-link">Avaliações</a>
-  <a href="#contato" class="nav-link">Contato</a>
+  <a href="transfer.html" class="nav-link">Transfer</a>
+  <a href="passeios.html" class="nav-link">Passeios</a>
+  <a href="contato.html" class="nav-link">Contato</a>
  <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn btn-reserve btn-sm ms-2">Reserve Online</a>
 </nav>
     </div>
     <!-- Menu colapsável no mobile -->
    <div class="mobile-nav d-md-none d-none flex-column text-center bg-white px-4 pb-3">
   <a href="#hero" class="nav-link py-2">Início</a>
-  <a href="#sobre" class="nav-link py-2">Quem Somos</a>
-  <a href="#servicos" class="nav-link py-2">Serviços</a>
-  <a href="#avaliacoes" class="nav-link py-2">Avaliações</a>
-  <a href="#contato" class="nav-link py-2">Contato</a>
+  <a href="sobre.html" class="nav-link py-2">Quem Somos</a>
+  <a href="transfer.html" class="nav-link py-2">Transfer</a>
+  <a href="passeios.html" class="nav-link py-2">Passeios</a>
+  <a href="contato.html" class="nav-link py-2">Contato</a>
   <a href="https://wa.me/5588982274666?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn btn-reserve mt-3">Reserve Online</a>
 </div>
  </header>
 
-<!-- 🔷 HERO CARROSSEL -->
-<section id="hero">
-  <style>
-    @keyframes fadeUp {
-      0% {
-        opacity: 0;
-        transform: translateY(40px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .slide-caption {
-      animation: fadeUp 1s ease-in-out;
-      text-align: left;
-    }
-
-    .slide-caption h1 {
-      font-size: 3.5rem; /* ou use display-3 do Bootstrap */
-      font-weight: bold;
-    }
-
-    .btn-custom {
-      background-color: #198754; /* verde Bootstrap */
-      color: white;
-      border: 2px solid #198754;
-      transition: 0.3s ease;
-    }
-
-    .btn-custom:hover {
-      background-color: transparent;
-      color: #198754;
-    }
-
-    @media (max-width: 768px) {
-      .slide-caption {
-        text-align: center;
-      }
-    }
-  </style>
-
-  <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active position-relative">
-        <img src="assets/banner1.jpg" class="d-block w-100" alt="Banner 1" />
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100">
-          <div class="slide-caption">
-            <h1 class="text-white">Os melhores passeios</h1>
-            <h2 class="text-white fs-4">Passeios de Quadriciclo, Buggy, Pickup e SW4.</h2>
-            <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." target="_blank" class="btn btn-custom mt-3">Reserve Online</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item position-relative">
-        <img src="assets/banner2.jpg" class="d-block w-100" alt="Banner 2" />
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100">
-          <div class="slide-caption">
-            <h1 class="text-white">Os melhores passeios</h1>
-            <h2 class="text-white fs-4">Passeios de Quadriciclo, Buggy, Pickup e SW4.</h2>
-            <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." target="_blank" class="btn btn-custom mt-3">Reserve Online</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Controles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
+<!-- 🔷 HERO ESTÁTICO COM TÍTULO -->
+<section id="hero" class="hero-sobre position-relative">
+  <div class="overlay d-flex align-items-center justify-content-center">
+    <h1 class="display-3 text-white fw-bold text-uppercase">Passeios</h1>
   </div>
 </section>
+
 
 
 <!-- 🔷 QUEM SOMOS -->
