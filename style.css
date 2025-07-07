@@ -193,7 +193,7 @@ footer {
   background-image: url('assets/banner1.jpg'); /* Altere o caminho se quiser outra imagem */
   background-size: cover;
   background-position: center;
-  height: 400px; /* pode ajustar conforme quiser */
+  height: 600px; /* pode ajustar conforme quiser */
   position: relative;
 }
 
@@ -204,4 +204,11 @@ footer {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5); /* escurece a imagem */
+}
+.hero-sobre h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
 }
