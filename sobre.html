@@ -11,12 +11,51 @@
 <body>
 
   <!-- 🔷 TOPO -->
-  <!-- (Cole o mesmo código do topo usado em index.html aqui) -->
+  <div class="top-bar sticky-top bg-dark text-white">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <div class="d-flex gap-4 small">
+        <span><img src="assets/icones/phone.png" alt="Tel" width="16" /> Entre em contato: (88) 98227-4666</span>
+        <span><img src="assets/icones/email.png" alt="Email" width="16" /> E-mail: jjerirotoa@gmail.com</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://instagram.com/almeidatransfer" target="_blank"><img src="assets/icones/instagram.png" width="20" alt="Instagram" /></a>
+        <a href="https://www.google.com/search?q=almeida+transfer+jericoacoara" target="_blank"><img src="assets/icones/google.png" width="20" alt="Google" /></a>
+        <a href="https://www.tripadvisor.com.br/Attraction_Review-g2572097-d26800122-Reviews-Almeida_Transfer" target="_blank"><img src="assets/icones/tripadvisor.png" width="20" alt="TripAdvisor" /></a>
+      </div>
+    </div>
+  </div>
 
   <!-- 🔷 CABEÇALHO PRINCIPAL -->
-  <!-- (Cole o mesmo cabeçalho responsivo usado em index.html aqui) -->
+  <header class="main-header sticky-top bg-white shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Logo Jeri Rota" height="40" />
+      </a>
+      <button class="menu-toggle d-md-none border-0 bg-transparent">
+        <img src="assets/icones/menu.png" alt="Menu" width="24" />
+      </button>
+      <nav class="main-nav d-none d-md-flex align-items-center gap-3">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="sobre.html" class="nav-link">Quem Somos</a>
+        <a href="servicos.html" class="nav-link">Serviços</a>
+        <a href="avaliacoes.html" class="nav-link">Avaliações</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn btn-reserve btn-sm ms-2">Reserve Online</a>
+      </nav>
+    </div>
 
-  <!-- 🔷 CONTEÚDO DA PÁGINA QUEM SOMOS -->
+    <!-- Menu mobile -->
+    <div class="mobile-nav d-md-none d-none flex-column text-center bg-white px-4 pb-3">
+      <a href="index.html" class="nav-link py-2">Início</a>
+      <a href="sobre.html" class="nav-link py-2">Quem Somos</a>
+      <a href="servicos.html" class="nav-link py-2">Serviços</a>
+      <a href="avaliacoes.html" class="nav-link py-2">Avaliações</a>
+      <a href="contato.html" class="nav-link py-2">Contato</a>
+      <a href="https://wa.me/5588982274666?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn btn-reserve mt-3">Reserve Online</a>
+    </div>
+  </header>
+
+  <!-- 🔷 CONTEÚDO QUEM SOMOS -->
   <section class="container my-5">
     <h1 class="text-center mb-4" style="font-weight: 700;">
       <span style="color: orange;">Sobre Nós</span><br />
@@ -28,29 +67,4 @@
       </div>
       <div class="col-md-6">
         <p style="font-size: 1.1rem;">
-          A <strong>Jeri Rota</strong> nasceu com o objetivo de conectar pessoas às belezas naturais de Jericoacoara com conforto e segurança.
-        </p>
-        <p style="font-size: 1.1rem;">
-          Nosso time é formado por profissionais apaixonados por turismo e comprometidos com a excelência no atendimento.
-        </p>
-        <p style="font-size: 1.1rem;">
-          Oferecemos translados e passeios personalizados para que sua experiência em Jeri seja inesquecível.
-        </p>
-        <a href="contato.html" class="btn btn-success mt-3">Entre em Contato</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 🔷 RODAPÉ -->
-  <!-- (Cole o mesmo rodapé usado em index.html aqui) -->
-
-  <!-- 🔷 BOTÃO WHATSAPP -->
-  <a href="https://wa.me/558882274666" class="float-whatsapp" target="_blank">
-    <img src="assets/icones/whatsapp.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 60px;" />
-  </a>
-
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-</body>
-</html>
+          A <strong>Jeri Rota</strong> nasceu com o objetivo de conectar pessoas às b
