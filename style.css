@@ -189,3 +189,19 @@ footer {
   background-color: #d96800; /* Tom mais escuro no hover */
   transform: scale(1.05);
 }
+.hero-sobre {
+  background-image: url('assets/banner1.jpg'); /* Altere o caminho se quiser outra imagem */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* pode ajustar conforme quiser */
+  position: relative;
+}
+
+.hero-sobre .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* escurece a imagem */
+}
