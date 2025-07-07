@@ -189,23 +189,76 @@ footer {
   background-color: #d96800; /* Tom mais escuro no hover */
   transform: scale(1.05);
 }
+/*
+BLOCO ANTIGO 
 .hero-sobre {
-  background-image: url('assets/banner1.jpg'); /* Altere o caminho se quiser outra imagem */
+  background-image: url('assets/banner1.jpg'); 
   background-size: cover;
   background-position: center;
-  height: 300px; /* pode ajustar conforme quiser */
-  position: relative;
+  height: 300px; 
 }
-
+.hero-passeios {
+  background-image: url('assets/banner7.jpg'); 
+}
 .hero-sobre .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* escurece a imagem */
+  background: rgba(0, 0, 0, 0.5); 
 }
 .hero-sobre h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+*/
+/* 🔷 HERO COM BANNERS DIFERENTES POR PÁGINA */
+.hero-sobre,
+.hero-passeios,
+.hero-contato,
+.hero-transfer {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  position: relative;
+}
+
+.hero-sobre {
+  background-image: url('assets/banner1.jpg');
+}
+
+.hero-passeios {
+  background-image: url('assets/banner7.jpg');
+}
+
+.hero-contato {
+  background-image: url('assets/banner-contato.jpg');
+}
+
+.hero-transfer {
+  background-image: url('assets/banner-transfer.jpg');
+}
+
+.hero-sobre .overlay,
+.hero-passeios .overlay,
+.hero-contato .overlay,
+.hero-transfer .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-sobre h1,
+.hero-passeios h1,
+.hero-contato h1,
+.hero-transfer h1 {
   font-size: 3.5rem;
   font-weight: 700;
   text-transform: uppercase;
