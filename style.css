@@ -232,7 +232,7 @@ BLOCO ANTIGO
 }
 
 .hero-passeios {
-  background-image: url('assets/banner7.jpg');
+  background-image: url('assets/banner-passeios.jpg');
 }
 
 .hero-contato {
@@ -242,8 +242,12 @@ BLOCO ANTIGO
 .hero-transfer {
   background-image: url('assets/banner-transfer.jpg');
 }
+.hero-hospedagem {
+  background-image: url('assets/banner-hospedagem.jpg');
+}
 
 .hero-sobre .overlay,
+.hero-hospedagem .overlay,
 .hero-passeios .overlay,
 .hero-contato .overlay,
 .hero-transfer .overlay {
@@ -256,6 +260,7 @@ BLOCO ANTIGO
 }
 
 .hero-sobre h1,
+.hero-hospedagem h1,
 .hero-passeios h1,
 .hero-contato h1,
 .hero-transfer h1 {
