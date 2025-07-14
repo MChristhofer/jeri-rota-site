@@ -19,13 +19,12 @@
       </div>
       <div class="d-flex align-items-center gap-3">
         <a href="https://instagram.com/almeidatransfer" target="_blank"><img src="assets/icones/instagram.png" width="20" alt="Instagram" /></a>
-        <a href="https://www.google.com/search?q=almeida+transfer+jericoacoara" target="_blank"><img src="assets/icones/google.png" width="20" alt="Google" /></a>
-        <a href="https://www.tripadvisor.com.br/Attraction_Review-g2572097-d26800122-Reviews-Almeida_Transfer" target="_blank"><img src="assets/icones/tripadvisor.png" width="20" alt="TripAdvisor" /></a>
+
       </div>
       </div>
       </div>
 
-  <!-- 🔷 CABEÇALHO PRINCIPAL (STICKY + RESPONSIVO) -->
+  <!--🔷 CABEÇALHO PRINCIPAL (STICKY + RESPONSIVO) -->
   <header class="main-header sticky-top bg-white shadow-sm">
     <div class="container d-flex justify-content-between align-items-center py-2">
       <a href="index.html" class="logo">
@@ -35,18 +34,21 @@
         <img src="assets/icones/menu.png" alt="Menu" width="24" />
       </button>
       <nav class="main-nav d-none d-md-flex align-items-center gap-3">
-  <a href="index.html" class="nav-link">Início</a>
+  <a href="#hero" class="nav-link">Início</a>
   <a href="sobre.html" class="nav-link">Quem Somos</a>
+  <a href="hospedagem.html" class="nav-link">Hospedagem</a>
   <a href="transfer.html" class="nav-link">Transfer</a>
   <a href="passeios.html" class="nav-link">Passeios</a>
   <a href="contato.html" class="nav-link">Contato</a>
- <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn btn-reserve btn-sm ms-2">Reserve Online</a>
+  <a href="https://wa.me/5588981588365?text=Vim%20pelo%20site,%20gostaria%20de%20mais%20informações..." class="btn-reserve">Reserve Online</a>
+
 </nav>
     </div>
     <!-- Menu colapsável no mobile -->
    <div class="mobile-nav d-md-none d-none flex-column text-center bg-white px-4 pb-3">
   <a href="#hero" class="nav-link py-2">Início</a>
   <a href="sobre.html" class="nav-link py-2">Quem Somos</a>
+  <a href="hospedagem.html" class="nav-link">Hospedagem</a>
   <a href="transfer.html" class="nav-link py-2">Transfer</a>
   <a href="passeios.html" class="nav-link py-2">Passeios</a>
   <a href="contato.html" class="nav-link py-2">Contato</a>
@@ -63,31 +65,34 @@
 
 
 
-<!-- 🔷 QUEM SOMOS -->
-<section id="sobre" class="container my-5">
-  <h2 class="text-center mb-4" style="font-weight: 700;">
-    <span style="color: orange;">Sobre Nós</span><br />
-    <span style="color: #001858;">Conheça a Jeri Rota</span>
-  </h2>
-  <div class="row align-items-center">
-    <div class="col-md-6 mb-4">
-      <img src="assets/quem-somos.jpg" alt="Equipe Jeri Rota" class="img-fluid rounded-4 shadow-sm" />
-    </div>
-    <div class="col-md-6">
-      <p style="font-size: 1.1rem;">
-        A <strong>Jeri Rota</strong> é especializada em transporte turístico e passeios em Jericoacoara e região.
-        Nosso objetivo é oferecer experiências únicas com segurança, conforto e pontualidade.
-      </p>
-      <p style="font-size: 1.1rem;">
-        Atuamos com veículos modernos, motoristas experientes e atendimento personalizado — ideal para quem busca
-        tranquilidade durante a estadia em Jeri.
-      </p>
-      <a href="#contato" class="btn btn-success mt-3">Fale Conosco</a>
+<!-- 🔷 FORMULÁRIO DE CONTATO -->
+<section class="container mb-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <form action="mailto:jjerirotoa@gmail.com" method="POST" enctype="text/plain" class="bg-light p-4 rounded-4 shadow-sm">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Seu nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" placeholder="Como você se chama?" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Seu e-mail</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Para onde respondemos?" required>
+        </div>
+        <div class="mb-3">
+          <label for="telefone" class="form-label">WhatsApp</label>
+          <input type="tel" class="form-control" id="telefone" name="telefone" placeholder="(DDD) 90000-0000" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Sua mensagem</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Fale com a gente! 😄" required></textarea>
+        </div>
+        <div class="text-end">
+          <button type="submit" class="btn btn-success">Enviar Mensagem</button>
+        </div>
+      </form>
     </div>
   </div>
 </section>
-
-  </section>
 
   <!-- 🔷 RODAPÉ -->
   <footer class="bg-dark text-white pt-4">
@@ -102,8 +107,9 @@
           <ul class="list-unstyled">
             <li><a href="index.html" class="text-white text-decoration-none">Início</a></li>
             <li><a href="sobre.html" class="text-white text-decoration-none">Quem Somos</a></li>
-            <li><a href="servicos.html" class="text-white text-decoration-none">Serviços</a></li>
-            <li><a href="avaliacoes.html" class="text-white text-decoration-none">Avaliações</a></li>
+            <li><a href="hospedagem.html" class="text-white text-decoration-none">Hospedagem</a></li>
+            <li><a href="transfer.html" class="text-white text-decoration-none">Transfer</a></li>
+            <li><a href="passeios.html" class="text-white text-decoration-none">Passeios</a></li>
             <li><a href="contato.html" class="text-white text-decoration-none">Contato</a></li>
           </ul>
         </div>
