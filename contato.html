@@ -65,28 +65,55 @@
 
 
 
-<!-- 🔷 FORMULÁRIO DE CONTATO -->
-<form action="https://formspree.io/f/xzzvplaw" method="POST" class="bg-light p-4 rounded-4 shadow-sm">
-  <div class="mb-3">
-    <label for="nome" class="form-label">Seu nome</label>
-    <input type="text" class="form-control" id="nome" name="nome" required>
+<!-- 🔷 CONTATO COM MAPA -->
+<section class="container my-5" id="contato">
+  <div class="text-center mb-4">
+    <h2 style="font-weight:700;">
+      <span style="color:orange;">Entre em Contato</span><br>
+      <span style="color:#001858;">Estamos por aqui em Jeri!</span>
+    </h2>
+    <p style="font-size:1.1rem; max-width:750px; margin:0 auto;">
+      Tem dúvidas sobre passeios, transfers ou hospedagem? Manda pra gente! 😊 Preencha o formulário abaixo ou mande uma mensagem via WhatsApp. Vamos responder rapidinho!
+    </p>
   </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Seu e-mail</label>
-    <input type="email" class="form-control" id="email" name="email" required>
+
+  <div class="row">
+    <!-- Formulário de Contato -->
+    <div class="col-md-6 mb-4">
+      <form action="https://formspree.io/f/xzzvplaw" method="POST" class="bg-light p-4 rounded-4 shadow-sm">
+        <div class="mb-3">
+          <label for="nome" class="form-label">Seu nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Seu e-mail</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+          <label for="telefone" class="form-label">WhatsApp</label>
+          <input type="tel" class="form-control" id="telefone" name="telefone" required>
+        </div>
+        <div class="mb-3">
+          <label for="mensagem" class="form-label">Mensagem</label>
+          <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
+        </div>
+        <div class="text-end">
+          <button type="submit" class="btn btn-success">Enviar Mensagem</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Mapa de Jericoacoara -->
+    <div class="col-md-6 mb-4">
+      <div class="ratio ratio-16x9 rounded-4 shadow-sm">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235203.8!2d-40.5125!3d-2.796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMiDCsDQ3JzQwLjkiUyA0MMKwMzAnMjEuOCJF!5e0!3m2!1spt-BR!2sbr!4v0000000000000"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        ></iframe>
+      </div>
+    </div>
   </div>
-  <div class="mb-3">
-    <label for="telefone" class="form-label">WhatsApp</label>
-    <input type="tel" class="form-control" id="telefone" name="telefone" required>
-  </div>
-  <div class="mb-3">
-    <label for="mensagem" class="form-label">Mensagem</label>
-    <textarea class="form-control" id="mensagem" name="mensagem" rows="5" required></textarea>
-  </div>
-  <div class="text-end">
-    <button type="submit" class="btn btn-success">Enviar</button>
-  </div>
-</form>
+</section>
 
 
   <!-- 🔷 RODAPÉ -->
