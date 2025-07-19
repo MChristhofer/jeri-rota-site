@@ -278,3 +278,23 @@ BLOCO ANTIGO
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+/* 🔷 CARDS MODERNOS COM ANIMAÇÃO E ZOOM */
+.card-modern {
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-modern:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-modern .card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card-modern:hover .card-img-top {
+  transform: scale(1.05);
+}
