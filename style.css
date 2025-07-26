@@ -220,7 +220,8 @@ BLOCO ANTIGO
 .hero-sobre,
 .hero-passeios,
 .hero-contato,
-.hero-transfer {
+.hero-transfer,
+.hero-hospedagem {
   background-size: cover;
   background-position: center;
   height: 300px;
