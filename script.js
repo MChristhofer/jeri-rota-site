@@ -51,3 +51,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Mostrar o botão de "voltar ao topo" ao rolar
+window.addEventListener("scroll", function () {
+  const btnTop = document.getElementById("btnTop");
+  if (window.scrollY > 200) {
+    btnTop.style.display = "block";
+  } else {
+    btnTop.style.display = "none";
+  }
+});
+
+// Função que rola para o topo suavemente
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
