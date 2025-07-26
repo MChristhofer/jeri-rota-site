@@ -33,3 +33,21 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateActiveLink);
   updateActiveLink(); // Força verificação ao carregar
 });
+// Funcionalidade do menu mobile
+document.addEventListener("DOMContentLoaded", function () {
+  const menuToggle = document.querySelector(".menu-toggle");
+  const mobileNav = document.querySelector(".mobile-nav");
+  const mobileLinks = mobileNav.querySelectorAll("a");
+
+  // Abre ou fecha o menu ao clicar no botão de menu
+  menuToggle.addEventListener("click", function () {
+    mobileNav.classList.toggle("d-none");
+  });
+
+  // Fecha o menu ao clicar em um link
+  mobileLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      mobileNav.classList.add("d-none");
+    });
+  });
+});
