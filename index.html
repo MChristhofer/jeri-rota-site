@@ -398,23 +398,25 @@
 
 
  <!-- 🔷 BOTÃO FLUTUANTE WHATSAPP -->
-  <a href="https://wa.me/558882274666" class="float-whatsapp" target="_blank">
-    <img src="assets/icones/whatsapp.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 60px;" />
-  </a>
+<a href="https://wa.me/558882274666" class="float-whatsapp" target="_blank">
+  <img src="assets/icones/whatsapp.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 60px;" />
+</a>
+
 <!-- 🔷 BOTÃO VOLTAR AO TOPO -->
 <button onclick="scrollToTop()" id="btnTop" title="Voltar ao topo"
-  style="display: block; position: fixed; bottom: 90px; right: 25px; z-index: 999; background-color: #f47c00; color: white; border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); cursor: pointer; transition: background-color 0.3s, transform 0.2s;">
+  style="display: none; position: fixed; bottom: 90px; right: 25px; z-index: 999; background-color: #f47c00; color: white; border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); cursor: pointer;">
   <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M8 12a.5.5 0 0 1-.5-.5V5.707L4.854 8.354a.5.5 0 1 1-.708-.708l4-4 .007-.007a.498.498 0 0 1 .7.007l4 4a.5.5 0 0 1-.708.708L8.5 5.707V11.5A.5.5 0 0 1 8 12z"/>
   </svg>
 </button>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
-  <script>
-  const cards = document.querySelectorAll('.fade-up');
+<!-- SCRIPTS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 
+<!-- Animação dos cards -->
+<script>
+  const cards = document.querySelectorAll('.fade-up');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -423,12 +425,10 @@
       }
     });
   }, { threshold: 0.1 });
-
-  cards.forEach(card => {
-    observer.observe(card);
-  });
+  cards.forEach(card => observer.observe(card));
 </script>
-<!-- 🔷 Script que gera os depoimentos dinamicamente via JSON -->
+
+<!-- Depoimentos dinâmicos -->
 <script>
   const depoimentos = [
     { nome: "André Fernandes", data: "10/07/2024", mensagem: "Excelente atendimento! Superou minhas expectativas.", cor: "primary" },
@@ -473,24 +473,7 @@
       </div>`;
   }
 </script>
-<!-- SEU SCRIPT EXISTENTE -->
-<script>
-  // Cards animados
-</script>
-
-<!-- ✅ Cole aqui: -->
-<script>
-  // Abre e fecha o menu no mobile
-  document.querySelector(".menu-toggle").addEventListener("click", function () {
-    const mobileNav = document.querySelector(".mobile-nav");
-    mobileNav.classList.toggle("d-none");
-  });
-</script>
-
-<!-- FIM DA PÁGINA -->
-</body>
-</html>
-
 
 </body>
 </html>
+
