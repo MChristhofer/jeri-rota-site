@@ -256,6 +256,7 @@ BLOCO ANTIGO
 .hero-hospedagem .overlay,
 .hero-passeios .overlay,
 .hero-contato .overlay,
+.hero-blog .overlay,
 .hero-transfer .overlay {
   position: absolute;
   top: 0;
