@@ -221,6 +221,7 @@ BLOCO ANTIGO
 .hero-passeios,
 .hero-contato,
 .hero-transfer,
+.hero-blog,
 .hero-hospedagem {
   background-size: cover;
   background-position: center;
@@ -234,6 +235,10 @@ BLOCO ANTIGO
 
 .hero-passeios {
   background-image: url('assets/banner-passeios.jpg');
+}
+
+.hero-blog {
+  background-image: url('assets/banner-blog.jpg');
 }
 
 .hero-contato {
