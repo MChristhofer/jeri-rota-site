@@ -1,91 +1,458 @@
-<!-- 🔷 TOP BAR (CONTACTS & ICONS) -->
-<div class="top-bar sticky-top bg-dark text-white">
-  <div class="container d-flex justify-content-between align-items-center py-2">
-    <div class="d-flex gap-4 small">
-      <span><img src="assets/icones/phone.png" alt="Tel" width="16" /> Contact us: (88) 98227-4666</span>
-      <span><img src="assets/icones/email.png" alt="Email" width="16" /> Email: jjerirotoa@gmail.com</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeri Rota – Tours in Jericoacoara</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- 🔷 TOP BAR WITH CONTACTS & ICONS (STICKY) -->
+  <div class="top-bar sticky-top bg-dark text-white">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <div class="d-flex gap-4 small">
+        <span><img src="assets/icones/phone.png" alt="Phone" width="16" /> Contact us: (88) 98227‑4666</span>
+        <span><img src="assets/icones/email.png" alt="Email" width="16" /> Email: jjerirotoa@gmail.com</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="https://www.instagram.com/jerirota?igsh=MTRrZ3BrczZ3NXUzeQ==" target="_blank">
+          <img src="assets/icones/instagram.png" width="20" alt="Instagram" />
+        </a>
+
+        <!-- Language Flags -->
+        <a href="index-en.html"><img src="assets/icones/flag-us.png" alt="English" width="20" title="English" /></a>
+        <a href="index-es.html"><img src="assets/icones/flag-es.png" alt="Español" width="20" title="Español" /></a>
+        <a href="index-fr.html"><img src="assets/icones/flag-fr.png" alt="Français" width="20" title="Français" /></a>
+        <a href="index-pt.html"><img src="assets/icones/flag-br.png" alt="Português" width="20" title="Português (PT)" /></a>
+      </div>
     </div>
-    <div class="d-flex align-items-center gap-3">
-      <a href="https://www.instagram.com/jerirota?igsh=MTRrZ3BrczZ3NXUzeQ==" target="_blank">
-        <img src="assets/icones/instagram.png" width="20" alt="Instagram" />
+  </div>
+
+  <!-- 🔷 MAIN HEADER (STICKY + RESPONSIVE) -->
+  <header class="main-header sticky-top bg-white shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center py-2">
+      <a href="index-en.html" class="logo">
+        <img src="assets/logo.png" alt="Jeri Rota Logo" height="70" />
       </a>
-      <!-- Language flags -->
-      <a href="index-en.html"><img src="assets/icones/flag-us.png" alt="English" width="20" title="English" /></a>
-      <a href="index-es.html"><img src="assets/icones/flag-es.png" alt="Español" width="20" title="Spanish" /></a>
-      <a href="index-fr.html"><img src="assets/icones/flag-fr.png" alt="Français" width="20" title="French" /></a>
-      <a href="index-pt.html"><img src="assets/icones/flag-br.png" alt="Português" width="20" title="Portuguese" /></a>
+      <button class="menu-toggle d-md-none border-0 bg-transparent">
+        <img src="assets/icones/menu.png" alt="Menu" width="24" />
+      </button>
+      <nav class="main-nav d-none d-md-flex align-items-center gap-3">
+        <a href="index-en.html" class="nav-link">Home</a>
+        <a href="sobre-en.html" class="nav-link">About Jeri Rota</a>
+        <a href="hospedagem-en.html" class="nav-link">Accommodation</a>
+        <a href="transfer-en.html" class="nav-link">Transfer</a>
+        <a href="passeios-en.html" class="nav-link">Tours</a>
+        <a href="contato-en.html" class="nav-link">Contact</a>
+        <a href="blog-en.html" class="nav-link">Blog</a>
+        <a href="https://wa.me/5588982274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." class="btn-reserve">Book Online</a>
+      </nav>
     </div>
-  </div>
-</div>
-
-<!-- 🔷 MAIN HEADER (NAVIGATION) -->
-<header class="main-header sticky-top bg-white shadow-sm">
-  <div class="container d-flex justify-content-between align-items-center py-2">
-    <a href="index-en.html" class="logo">
-      <img src="assets/logo.png" alt="Jeri Rota Logo" height="70" />
-    </a>
-    <button class="menu-toggle d-md-none border-0 bg-transparent">
-      <img src="assets/icones/menu.png" alt="Menu" width="24" />
-    </button>
-    <nav class="main-nav d-none d-md-flex align-items-center gap-3">
-      <a href="index-en.html" class="nav-link">Home</a>
-      <a href="sobre-en.html" class="nav-link">Jeri Rota</a>
+    <!-- Mobile Menu -->
+    <div class="mobile-nav d-md-none d-none flex-column text-center bg-white px-4 pb-3">
+      <a href="#hero" class="nav-link py-2">Home</a>
+      <a href="#sobre" class="nav-link py-2">About Jeri Rota</a>
       <a href="hospedagem-en.html" class="nav-link">Accommodation</a>
-      <a href="transfer-en.html" class="nav-link">Transfer</a>
-      <a href="passeios-en.html" class="nav-link">Tours</a>
-      <a href="contato-en.html" class="nav-link">Contact</a>
-      <a href="blog-en.html" class="nav-link">Blog</a>
-      <a href="https://wa.me/5588982274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." class="btn-reserve">Book Online</a>
-    </nav>
-  </div>
-  <!-- Mobile navigation -->
-  <div class="mobile-nav d-md-none d-none flex-column text-center bg-white px-4 pb-3">
-    <a href="#hero" class="nav-link py-2">Home</a>
-    <a href="#sobre" class="nav-link py-2">Jeri Rota</a>
-    <a href="hospedagem-en.html" class="nav-link">Accommodation</a>
-    <a href="transfer-en.html" class="nav-link py-2">Transfer</a>
-    <a href="passeios-en.html" class="nav-link py-2">Tours</a>
-    <a href="#contato-en.html" class="nav-link py-2">Contact</a>
-    <a href="blog-en.html" class="nav-link py-2">Blog</a>
-    <a href="https://wa.me/5588982274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." class="btn btn-reserve mt-3">Book Online</a>
-  </div>
-</header>
+      <a href="transfer-en.html" class="nav-link py-2">Transfer</a>
+      <a href="passeios-en.html" class="nav-link py-2">Tours</a>
+      <a href="#contato-en.html" class="nav-link py-2">Contact</a>
+      <a href="blog-en.html" class="nav-link py-2">Blog</a>
+      <a href="https://wa.me/5588982274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." class="btn btn-reserve mt-3">Book Online</a>
+    </div>
+  </header>
 
-<!-- 🔷 HERO CAROUSEL -->
-<section id="hero">
-  <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <!-- Slide 1 -->
-      <div class="carousel-item active position-relative">
-        <img src="assets/banner1.jpg" class="d-block w-100" alt="Banner 1" />
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100">
-          <div class="slide-caption">
-            <h1 class="text-white">The Best Tours</h1>
-            <h2 class="text-white fs-4">ATV, Buggy, Pickup and SW4 tours.</h2>
-            <a href="https://wa.me/5588982274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." target="_blank" class="btn btn-custom mt-3">Book Online</a>
+  <!-- 🔷 HERO CAROUSEL -->
+  <section id="hero">
+    <style>
+      @keyframes fadeUp {
+        0% {
+          opacity: 0;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .slide-caption { animation: fadeUp 1s ease-in-out; text-align: left; }
+      .slide-caption h1 { font-size: 3.5rem; font-weight: bold; }
+      .btn-custom { background-color: #198754; color: white; border: 2px solid #198754; transition: 0.3s ease; }
+      .btn-custom:hover { background-color: transparent; color: #198754; }
+      @media (max-width: 768px) { .slide-caption { text-align: center; } }
+    </style>
+
+    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active position-relative">
+          <img src="assets/banner1.jpg" class="d-block w-100" alt="Banner 1" />
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100">
+            <div class="slide-caption">
+              <h1 class="text-white">The Best Tours</h1>
+              <h2 class="text-white fs-4">Quad bike, Buggy, Pickup and SW4 Tours.</h2>
+              <a href="https://wa.me/5588982274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." target="_blank" class="btn btn-custom mt-3">Book Online</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item position-relative">
+          <img src="assets/banner2.jpg" class="d-block w-100" alt="Banner 2" />
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100">
+            <div class="slide-caption">
+              <h1 class="text-white">The Best Tours</h1>
+              <h2 class="text-white fs-4">Quad bike, Buggy, Pickup and SW4 Tours.</h2>
+              <a href="https://wa.me/558882274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." target="_blank" class="btn btn-custom mt-3">Book Online</a>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Slide 2 -->
-      <div class="carousel-item position-relative">
-        <img src="assets/banner2.jpg" class="d-block w-100" alt="Banner 2" />
-        <div class="carousel-caption d-flex flex-column justify-content-center align-items-start h-100">
-          <div class="slide-caption">
-            <h1 class="text-white">The Best Tours</h1>
-            <h2 class="text-white fs-4">ATV, Buggy, Pickup and SW4 tours.</h2>
-            <a href="https://wa.me/558882274666?text=Came%20from%20the%20website,%20I%20would%20like%20more%20information..." target="_blank" class="btn btn-custom mt-3">Book Online</a>
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- 🔷 MOST SOUGHT-AFTER TRANSFERS -->
+  <section id="transfers" class="container my-5">
+    <h2 class="text-center mb-4" style="font-weight: 700;">
+      <span style="color: orange;">Transfer</span><br />
+      <span style="color: #001858;">Most Searched Transfers</span>
+    </h2>
+    <div class="row justify-content-center">
+
+      <!-- CARD 1 -->
+      <div class="col-md-5 mb-4 fade-up">
+        <div class="card card-modern shadow-sm">
+          <img src="assets/transfer-aeroporto.jpg" class="card-img-top" alt="Regional Airport Transfer JJD">
+          <div class="card-body">
+            <div class="d-flex justify-content-between small text-muted mb-2">
+              <span>🚙 Hilux 4×4, SW4 4×4</span>
+              <span>⏱️ 50 min</span>
+              <span>👥 1–8</span>
+            </div>
+            <h5 class="card-title fw-bold">Regional Airport (JJD) to Jericoacoara Transfer</h5>
+            <p class="mb-1 text-primary fw-semibold">Private or Shared</p>
+            <p class="small">Transfer via pavement and Natural Park.</p>
+            <a href="https://wa.me/558882274666?text=I%20would%20like%20to%20book%20the%20transfer%20from%20Regional%20Airport%20JJD%20to%20Jericoacoara." target="_blank" class="btn btn-success w-100">
+              <img src="assets/icones/whatsapp1.png" alt="WhatsApp" width="18" class="me-2" />
+              RESERVE ONLINE
+            </a>
           </div>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="col-md-5 mb-4 fade-up">
+        <div class="card card-modern shadow-sm">
+          <img src="assets/transfer-fortaleza.jpg" class="card-img-top" alt="Fortaleza Transfer">
+          <div class="card-body">
+            <div class="d-flex justify-content-between small text-muted mb-2">
+              <span>🚙 Hilux 4×4, SW4 4×4</span>
+              <span>⏱️ 4 h 30 min</span>
+              <span>👥 1–8</span>
+            </div>
+            <h5 class="card-title fw-bold">Fortaleza to Jericoacoara Transfer</h5>
+            <p class="mb-1 text-primary fw-semibold">Private or Shared</p>
+            <p class="small">Transfer via pavement and National Park.<br>* Departures from Airport, Bus Station or Beira‑Mar.</p>
+            <a href="https://wa.me/558882274666?text=I%20would%20like%20to%20book%20the%20transfer%20from%20Fortaleza%20to%20Jericoacoara." target="_blank" class="btn btn-success w-100">
+              <img src="assets/icones/whatsapp1.png" alt="WhatsApp" width="18" class="me-2" />
+              RESERVE ONLINE
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🔷 THE BEST TOURS -->
+  <section id="tours" class="container my-5">
+    <h2 class="text-center mb-4" style="font-weight: 700;">
+      <span style="color: orange;">Tours</span><br />
+      <span style="color: #001858;">The Best Tours in Jeri</span>
+    </h2>
+    <div class="row justify-content-center">
+
+      <!-- Tour 1: Eastern Coast -->
+      <div class="col-md-4 mb-4 fade-up">
+        <div class="card shadow-sm border‑0 rounded‑4 overflow‑hidden">
+          <img src="assets/passeio-leste.jpg" class="card-img-top" alt="Eastern Coast Tour">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Eastern Coast</h5>
+            <p class="small">Sloth Tree, Praia do Preá, Blue Hole, Blue Lagoon, Paraíso Lagoon, Amâncio Dunes – 6 h.</p>
+            <a href="https://wa.me/5588982274666?text=I%20would%20like%20to%20know%20more%20about%20the%20Eastern%20Coast%20Tour." target="_blank" class="btn btn-success w-100">🟢 LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour 2: Western Coast -->
+      <div class="col-md-4 mb-4 fade-up">
+        <div class="card shadow-sm border‑0 rounded‑4 overflow‑hidden">
+          <img src="assets/passeio-oeste.jpg" class="card-img-top" alt="Western Coast Tour">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Western Coast</h5>
+            <p class="small">Guriú Ferry, Seahorse, Mangue Seco, Tatajuba Dunes, Great Lagoon – 6 h.</p>
+            <a href="https://wa.me/5588982274666?text=I%20would%20like%20to%20know%20more%20about%20the%20Western%20Coast%20Tour." target="_blank" class="btn btn-success w-100">🟢 LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tour 3: Barrinha -->
+      <div class="col-md-4 mb-4 fade-up">
+        <div class="card shadow-sm border‑0 rounded‑4 overflow‑hidden">
+          <img src="assets/passeio-barrinha.jpg" class="card-img-top" alt="Barrinha Tour">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Barrinha</h5>
+            <p class="small">Blue Lagoon or Lagun Beach, Munzuá Pier Club, Barrinha Dunes with sunset – 6 h.</p>
+            <a href="https://wa.me/5588982274666?text=I%20would%20like%20to%20know%20more%20about%20the%20Barrinha%20Tour." target="_blank" class="btn btn-success w-100">🟢 LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 🔷 STATIC TESTIMONIALS -->
+  <section id="testimonials" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" style="font-weight: 700;">
+        <span style="color: orange;">Testimonials</span><br />
+        <span style="color: #001858;">What Our Clients Say</span>
+      </h2>
+
+      <div class="row justify-content-center g-4">
+
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h‑100 shadow-sm border‑0 p‑3">
+            <img src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" alt="Google" width="80" class="mb-2">
+            <div class="d-flex align-items-center mb-3">
+              <div class="rounded-circle bg-primary text-white d-flex justify-content-center align-items-center" style="width: 48px; height: 48px; font-weight: bold;">A</div>
+              <div class="ms-3">
+                <h6 class="mb-0 fw-bold">André Fernandes</h6>
+                <small class="text-muted">07/10/2024</small>
+              </div>
+            </div>
+            <div class="text-warning mb-2" style="font-size: 1.2rem;">★★★★★</div>
+            <p>Excellent service! The consultation exceeded my expectations and guided me clearly.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h‑100 shadow-sm border‑0 p‑3">
+            <img src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" alt="Google" width="80" class="mb-2">
+            <div class="d-flex align-items-center mb-3">
+              <div class="rounded-circle bg-success text-white d-flex justify-content-center align-items-center" style="width: 48px; height: 48px; font-weight: bold;">L</div>
+              <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Luciana Ribeiro</h6>
+                <small class="text-muted">06/27/2024</small>
+              </div>
+            </div>
+            <div class="text-warning mb-2" style="font-size: 1.2rem;">★★★★★</div>
+            <p>Professionalism and dedication from start to finish. Impeccable service.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h‑100 shadow-sm border‑0 p‑3">
+            <img src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" alt="Google" width="80" class="mb-2">
+            <div class="d‑flex align-items-center mb-3">
+              <div class="rounded-circle bg-danger text‑white d‑flex justify-content-center align-items-center" style="width: 48px; height: 48px; font-weight: bold;">M</div>
+              <div class="ms-3">
+                <h6 class="mb-0 fw-bold">Marcos Lima</h6>
+                <small class="text-muted">06/05/2024</small>
+              </div>
+            </div>
+            <div class="text-warning mb-2" style="font-size: 1.2rem;">★★★★★</div>
+            <p>Great consultation! Helped me make strategic decisions.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔷 ABOUT US -->
+  <section style="background-color: #fff; color: #000; padding: 60px 0;">
+    <div class="container">
+      <h2 class="text-center mb-4" style="font-weight: 700;">
+        <span style="color: orange;">About Us</span><br />
+        <span style="color: #001858;">Meet Jeri Rota</span>
+      </h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4">
+          <img src="assets/quem-somos.jpg" alt="Jeri Rota Team" class="img-fluid rounded-4 shadow-sm" />
+        </div>
+        <div class="col-md-6">
+          <p style="font-size: 1.1rem;">
+            <strong>Jeri Rota</strong> specializes in tourist transportation and tours in Jericoacoara and nearby areas.
+            Our goal is to offer unique experiences with safety, comfort, and punctuality.
+          </p>
+          <p style="font-size: 1.1rem;">
+            We operate with modern vehicles, experienced drivers, and personalized service — ideal for those looking for peace of mind during their stay in Jeri.
+          </p>
+          <a href="#contact" class="btn btn-success mt-3">Talk to Us</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-</section>
+  <!-- 🔷 FOOTER WITH BLACK BACKGROUND AND SEALS SECTION -->
+  <footer class="footer text-white pt‑5" style="background-color: #000;">
+    <div class="container">
+      <div class="row">
+
+        <!-- COLUMN 1: Logo + Description -->
+        <div class="col-md-4 mb‑4">
+          <img src="assets/logo1.png" alt="Jeri Rota" height="60" class="mb‑2">
+          <h6 class="text-uppercase text-warning fw-bold mt‑2">JERI ROTA</h6>
+          <p>Specialists in transfers and personalized tours in Jericoacoara. Safe and unforgettable itineraries, tailored to you.</p>
+          <div class="d-flex gap-3 mt-3">
+            <a href="https://www.instagram.com/jerirota" target="_blank"><img src="assets/icones/instagram.png" width="24" alt="Instagram"></a>
+          </div>
+        </div>
+
+        <!-- COLUMN 2: Services + Institutional -->
+        <div class="col-md-4 mb‑4">
+          <h5 class="mb‑3">Services</h5>
+          <ul class="list-unstyled mb‑4">
+            <li class="mb‑2">
+              <a href="transfer-en.html" class="text-white text-decoration-none d-flex align-items-center">
+                <span class="me-2">›</span>Transfers
+              </a>
+            </li>
+            <li>
+              <a href="tours-en.html" class="text-white text-decoration-none d-flex align-items-center">
+                <span class="me-2">›</span>Tours
+              </a>
+            </li>
+          </ul>
+          <h5 class="mb‑3">Institutional</h5>
+          <ul class="list-unstyled">
+            <li class="mb‑2">
+              <a href="sobre-en.html" class="text-white text-decoration-none d-flex align-items-center">
+                <span class="me-2">›</span>About us
+              </a>
+            </li>
+            <li>
+              <a href="/privacy-policy" class="text-white text-decoration-none d-flex align-items-center">
+                <span class="me-2">›</span>Privacy Policy
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- COLUMN 3: Contact + Seals -->
+        <div class="col-md-4 mb‑4">
+          <h5 class="mb‑3">Contact</h5>
+          <p class="mb‑2">
+            <img src="assets/icones/whatsapp.png" width="16" class="me‑2"> (88) 98227‑4666
+          </p>
+          <p class="mb‑2">
+            <img src="assets/icones/email.png" width="16" class="me‑2"> jjerirotoa@gmail.com
+          </p>
+          <div class="d-flex gap-2 flex-wrap align-items-center mt‑3">
+            <div class="selo-box">
+              <img src="assets/icones/cadastur.png" alt="Cadastur" height="40">
+            </div>
+            <div class="selo-box">
+              <img src="assets/icones/compra-segura.png" alt="Secure Purchase" height="40">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FLOATING WHATSAPP BUTTON -->
+      <a href="https://wa.me/558882274666" class="float-whatsapp" target="_blank">
+        <img src="assets/icones/whatsapp.png" alt="WhatsApp" style="position: fixed; bottom: 20px; right: 20px; width: 60px;" />
+      </a>
+
+      <!-- BACK TO TOP BUTTON -->
+      <button onclick="scrollToTop()" id="btnTop" title="Back to Top"
+        style="display: none; position: fixed; bottom: 90px; right: 25px; z-index: 999; background-color: #f47c00; color: white; border: none; border-radius: 50%; width: 56px; height: 56px; font-size: 22px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 12a.5.5 0 0 1-.5-.5V5.707L4.854 8.354a.5.5 0 1 1-.708-.708l4-4 .007-.007a.498.498 0 0 1 .7.007l4 4a.5.5 0 0 1-.708.708L8.5 5.707V11.5A.5.5 0 0 1 8 12z"/>
+        </svg>
+      </button>
+
+      <!-- JS SCRIPTS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="script.js"></script>
+
+      <!-- Card Animation Script -->
+      <script>
+        const cards = document.querySelectorAll('.fade-up');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.1 });
+        cards.forEach(card => observer.observe(card));
+      </script>
+
+      <!-- Dynamic Testimonials Script -->
+      <script>
+        const testimonials = [
+          { name: "André Fernandes", date: "07/10/2024", message: "Excellent service! The consultation exceeded my expectations and guided me clearly.", color: "primary" },
+          { name: "Luciana Ribeiro", date: "06/27/2024", message: "Professionalism and dedication from start to finish. Impeccable service.", color: "success" },
+          { name: "Marcos Lima", date: "06/05/2024", message: "Great consultation! Helped me make strategic decisions.", color: "danger" },
+          { name: "Edna Souza", date: "05/03/2024", message: "We were very well served. Punctuality and friendliness. A perfect 10!", color: "warning" },
+          { name: "Rafael Torres", date: "04/18/2024", message: "Highly recommend! Service with seriousness and care.", color: "secondary" },
+          { name: "Sandra Melo", date: "04/09/2024", message: "I just loved it! Humanized and fast service.", color: "info" }
+        ];
+
+        const container = document.getElementById('depoimentos-container');
+        const chunkSize = 3;
+
+        function createCard({ name, date, message, color }) {
+          const initial = name.charAt(0).toUpperCase();
+          return `
+            <div class="col-md-4">
+              <div class="card h‑100 shadow-sm border‑0 p‑3">
+                <img src="https://cdn.trustindex.io/assets/platform/Google/logo.svg" alt="Google" width="80" class="mb-2">
+                <div class="d‑flex align-items-center mb‑3">
+                  <div class="rounded-circle bg-${color} text-white d‑flex justify-content-center align-items-center" style="width: 48px; height: 48px; font-weight: bold;">${initial}</div>
+                  <div class="ms-3">
+                    <h6 class="mb-0 fw-bold">${name}</h6>
+                    <small class="text-muted">${date}</small>
+                  </div>
+                </div>
+                <div class="text-warning mb-2" style="font-size: 1.2rem;">★★★★★</div>
+                <p>${message}</p>
+              </div>
+            </div>`;
+        }
+
+        for (let i = 0; i < testimonials.length; i += chunkSize) {
+          const group = testimonials.slice(i, i + chunkSize);
+          const isActive = i === 0 ? "active" : "";
+          const cards = group.map(dep => createCard(dep)).join("");
+          container.innerHTML += `
+            <div class="carousel-item ${isActive}">
+              <div class="row justify-content-center g-4">
+                ${cards}
+              </div>
+            </div>`;
+        }
+      </script>
+
+    </div>
+  </footer>
+
+</body>
+</html>
