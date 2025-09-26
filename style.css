@@ -220,6 +220,7 @@ BLOCO ANTIGO
 .hero-sobre,
 .hero-passeios,
 .hero-contato,
+.hero-politica,
 .hero-transfer,
 .hero-blog,
 .hero-hospedagem {
@@ -227,6 +228,10 @@ BLOCO ANTIGO
   background-position: center;
   height: 300px;
   position: relative;
+}
+
+.hero-politica {
+  background-image: url('assets/bannersobre.jpg');
 }
 
 .hero-sobre {
