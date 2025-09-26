@@ -338,3 +338,8 @@ BLOCO ANTIGO
   border-bottom-right-radius: 16px;
   background-color: #fff;
 }
+.card-img-top {
+  width: 690px;
+  height: 518px;
+  object-fit: cover; /* garante que a imagem preencha sem distorcer */
+}
