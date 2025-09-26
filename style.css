@@ -343,3 +343,17 @@ BLOCO ANTIGO
   height: 518px;
   object-fit: cover; /* garante que a imagem preencha sem distorcer */
 }
+/* 🔷 TAMANHO FIXO PARA IMAGENS DOS CARDS DE TRANSFER */
+.card-modern img[alt="Transfer Aeroporto JJD"],
+.card-modern img[alt="Transfer Fortaleza"] {
+  width: 690px;       /* largura fixa */
+  height: 518px;      /* altura fixa */
+  object-fit: cover;  /* mantém proporção sem distorcer */
+  display: block;
+  margin: 0 auto;     /* centraliza horizontalmente */
+}
+
+/* Garantir que o card permita a largura da imagem */
+.card-modern {
+  max-width: none;  /* remove limite de largura que poderia impedir a imagem */
+}
