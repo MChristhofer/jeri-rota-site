@@ -223,7 +223,7 @@ BLOCO ANTIGO
 .hero-politica,
 .hero-transfer,
 .hero-blog,
-.hero-hospedagem {
+.hero-hospedagem { 
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -259,6 +259,7 @@ BLOCO ANTIGO
 
 .hero-sobre .overlay,
 .hero-hospedagem .overlay,
+.hero-politica .overlay,
 .hero-passeios .overlay,
 .hero-contato .overlay,
 .hero-blog .overlay,
@@ -273,6 +274,7 @@ BLOCO ANTIGO
 
 .hero-sobre h1,
 .hero-hospedagem h1,
+.hero-politica h1,
 .hero-passeios h1,
 .hero-contato h1,
 .hero-transfer h1 {
