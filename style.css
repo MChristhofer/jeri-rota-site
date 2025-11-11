@@ -27,7 +27,6 @@ a {
 }
 
 /* 🔷 NAVEGAÇÃO DESKTOP */
-/* Efeito linha ao passar o mouse */
 .main-nav .nav-link {
   position: relative;
   padding-bottom: 4px;
@@ -51,6 +50,7 @@ a {
 .main-nav .nav-link.active::after {
   width: 100%;
 }
+
 .main-nav .nav-link.active {
   color: #ff9800; /* laranja vibrante */
 }
@@ -67,21 +67,32 @@ a {
   width: 28px;
 }
 
-/* 🔷 MENU MOBILE */
+/* 🔷 MENU MOBILE COM ANIMAÇÃO SUAVE */
 .mobile-nav {
-  transition: max-height 0.3s ease;
+  display: none;
+  flex-direction: column;
+  text-align: center;
+  background: #fff;
+  width: 100%;
   overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .mobile-nav.show {
   display: flex !important;
+  max-height: 500px; /* altura suficiente para o conteúdo */
+  opacity: 1;
 }
 
 /* 🔷 HERO - IMAGENS TELA CHEIA */
 .carousel-item img {
-  height: 100vh;         /* Altura total da tela */
-  object-fit: cover;     /* Imagem cobre sem distorcer */
+  height: 100vh; /* Altura total da tela */
+  object-fit: cover; /* Imagem cobre sem distorcer */
 }
+
 .carousel-caption {
   bottom: 0;
   top: 0;
@@ -108,16 +119,9 @@ footer {
   .menu-toggle {
     display: block;
   }
-
-  .mobile-nav {
-    display: none;
-  }
-
-  .mobile-nav.show {
-    display: flex;
-  }
 }
-/* 🔷 ANIMAÇÃO DA LOGO AO PASSAR O MOUSE - ESQUERDA/DIREITA */
+
+/* 🔷 ANIMAÇÃO DA LOGO AO PASSAR O MOUSE */
 @keyframes balanco-lateral {
   0% { transform: translateX(0); }
   25% { transform: translateX(5px); }
@@ -133,21 +137,8 @@ footer {
 .logo img:hover {
   animation: balanco-lateral 0.6s ease-in-out;
 }
-/* 🔷 BOTÃO RESERVA AO LADO DO MENU */
-.btn-primary {
-  background-color: #e9911e; /* Laranja vibrante */
-  border: none;
-  padding: 10px 20px;
-  font-weight: bold;
-  border-radius: 4px;
-  color: #fff;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
 
-.btn-primary:hover {
-  background-color: #d81b60;
-  transform: scale(1.05);
-}
+/* 🔷 BOTÃO RESERVA AO LADO DO MENU */
 .btn-primary {
   background-color: #e91e63;
   border: none;
@@ -162,6 +153,7 @@ footer {
   background-color: #d81b60;
   transform: scale(1.05);
 }
+
 /* 🔷 ANIMAÇÃO FADE-UP NOS CARDS */
 .fade-up {
   opacity: 0;
@@ -173,8 +165,10 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* 🔷 BOTÃO "RESERVE ONLINE" */
 .btn-reserve {
-  background-color: #f47c00; /* Laranja vibrante igual ao Almeida Transfer */
+  background-color: #f47c00; /* Laranja vibrante */
   color: #fff;
   font-weight: bold;
   padding: 10px 22px;
@@ -186,36 +180,10 @@ footer {
 }
 
 .btn-reserve:hover {
-  background-color: #d96800; /* Tom mais escuro no hover */
+  background-color: #d96800;
   transform: scale(1.05);
 }
-/*
-BLOCO ANTIGO 
-.hero-sobre {
-  background-image: url('assets/banner1.jpg'); 
-  background-size: cover;
-  background-position: center;
-  height: 300px; 
-}
-.hero-passeios {
-  background-image: url('assets/banner7.jpg'); 
-}
-.hero-sobre .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5); 
-}
-.hero-sobre h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-}
-*/
+
 /* 🔷 HERO COM BANNERS DIFERENTES POR PÁGINA */
 .hero-sobre,
 .hero-passeios,
@@ -223,39 +191,20 @@ BLOCO ANTIGO
 .hero-politica,
 .hero-transfer,
 .hero-blog,
-.hero-hospedagem { 
+.hero-hospedagem {
   background-size: cover;
   background-position: center;
   height: 300px;
   position: relative;
 }
 
-.hero-politica {
-  background-image: url('assets/bannerpolitica.jpg');
-}
-
-.hero-sobre {
-  background-image: url('assets/bannersobre.jpg');
-}
-
-.hero-passeios {
-  background-image: url('assets/banner-passeios.jpg');
-}
-
-.hero-blog {
-  background-image: url('assets/banner-blog.jpg');
-}
-
-.hero-contato {
-  background-image: url('assets/banner-contato.jpg');
-}
-
-.hero-transfer {
-  background-image: url('assets/banner-transfer.jpg');
-}
-.hero-hospedagem {
-  background-image: url('assets/banner-hospedagem.jpg');
-}
+.hero-politica { background-image: url('assets/bannerpolitica.jpg'); }
+.hero-sobre { background-image: url('assets/bannersobre.jpg'); }
+.hero-passeios { background-image: url('assets/banner-passeios.jpg'); }
+.hero-blog { background-image: url('assets/banner-blog.jpg'); }
+.hero-contato { background-image: url('assets/banner-contato.jpg'); }
+.hero-transfer { background-image: url('assets/banner-transfer.jpg'); }
+.hero-hospedagem { background-image: url('assets/banner-hospedagem.jpg'); }
 
 .hero-sobre .overlay,
 .hero-hospedagem .overlay,
@@ -284,6 +233,7 @@ BLOCO ANTIGO
   color: white;
   text-align: center;
 }
+
 /* 🔷 SELLOS DE PAGAMENTO E SEGURANÇA */
 .footer .selos-pagamento {
   max-width: 420px;
@@ -292,12 +242,14 @@ BLOCO ANTIGO
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
+
 /* 🔷 CARDS MODERNOS COM ANIMAÇÃO E ZOOM */
 .card-modern {
   border: none;
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: none;
 }
 
 .card-modern:hover {
@@ -312,20 +264,21 @@ BLOCO ANTIGO
 .card-modern:hover .card-img-top {
   transform: scale(1.05);
 }
+
 .card .rounded-circle {
   font-size: 1.2rem;
   font-family: 'Segoe UI', sans-serif;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
 .card {
   border-radius: 16px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card .card-img-top {
@@ -338,22 +291,13 @@ BLOCO ANTIGO
   border-bottom-right-radius: 16px;
   background-color: #fff;
 }
-.card-img-top {
-  width: 690px;
-  height: 518px;
-  object-fit: cover; /* garante que a imagem preencha sem distorcer */
-}
+
 /* 🔷 TAMANHO FIXO PARA IMAGENS DOS CARDS DE TRANSFER */
 .card-modern img[alt="Transfer Aeroporto JJD"],
 .card-modern img[alt="Transfer Fortaleza"] {
-  width: 690px;       /* largura fixa */
-  height: 518px;      /* altura fixa */
-  object-fit: cover;  /* mantém proporção sem distorcer */
+  width: 690px;
+  height: 518px;
+  object-fit: cover;
   display: block;
-  margin: 0 auto;     /* centraliza horizontalmente */
-}
-
-/* Garantir que o card permita a largura da imagem */
-.card-modern {
-  max-width: none;  /* remove limite de largura que poderia impedir a imagem */
+  margin: 0 auto;
 }
