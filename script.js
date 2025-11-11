@@ -33,24 +33,28 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", updateActiveLink);
   updateActiveLink(); // Força verificação ao carregar
 });
-// Funcionalidade do menu mobile
+// Funcionalidade do menu mobile (melhorada)
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
-  const mobileLinks = mobileNav.querySelectorAll("a");
 
-  // Abre ou fecha o menu ao clicar no botão de menu
-  menuToggle.addEventListener("click", function () {
-    mobileNav.classList.toggle("d-none");
-  });
-
-  // Fecha o menu ao clicar em um link
-  mobileLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      mobileNav.classList.add("d-none");
+  if (menuToggle && mobileNav) {
+    menuToggle.addEventListener("click", function () {
+      // alterna a visibilidade do menu
+      mobileNav.classList.toggle("show");
     });
-  });
+
+    // fecha o menu ao clicar em um link
+    const mobileLinks = mobileNav.querySelectorAll("a");
+    mobileLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        mobileNav.classList.remove("show");
+      });
+    });
+  }
 });
+
+
 // Mostrar o botão de "voltar ao topo" ao rolar
 window.addEventListener("scroll", function () {
   const btnTop = document.getElementById("btnTop");
