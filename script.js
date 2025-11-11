@@ -53,6 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+// 🔷 Destacar o link ativo no menu mobile
+document.addEventListener("DOMContentLoaded", function () {
+  const mobileLinks = document.querySelectorAll(".mobile-nav a");
+
+  mobileLinks.forEach(link => {
+    link.addEventListener("click", function () {
+      mobileLinks.forEach(l => l.classList.remove("active"));
+      this.classList.add("active");
+    });
+  });
+});
 
 
 // Mostrar o botão de "voltar ao topo" ao rolar
