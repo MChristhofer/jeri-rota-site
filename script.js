@@ -1,12 +1,13 @@
+// 🔷 ATIVAR LINK ATUAL NO MENU AO ROLAR A PÁGINA
 document.addEventListener("DOMContentLoaded", function () {
-  const sections = document.querySelectorAll("section");
+  const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".main-nav .nav-link");
 
   function updateActiveLink() {
     let currentSectionId = "";
 
     sections.forEach((section) => {
-      const sectionTop = section.offsetTop - 120; // margem superior
+      const sectionTop = section.offsetTop - 150;
       const sectionHeight = section.offsetHeight;
 
       if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
@@ -16,35 +17,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navLinks.forEach((link) => {
       link.classList.remove("active");
-      if (link.getAttribute("href") === `#${currentSectionId}`) {
+      if (link.getAttribute("href").includes(currentSectionId)) {
         link.classList.add("active");
       }
     });
   }
 
-  // Atualiza ao clicar também
-  navLinks.forEach((link) => {
-    link.addEventListener("click", function () {
-      navLinks.forEach((lnk) => lnk.classList.remove("active"));
-      this.classList.add("active");
-    });
-  });
-
   window.addEventListener("scroll", updateActiveLink);
-  updateActiveLink(); // Força verificação ao carregar
+  updateActiveLink();
 });
-// Funcionalidade do menu mobile (melhorada)
+
+// 🔷 MENU MOBILE (ABRIR/FECHAR)
 document.addEventListener("DOMContentLoaded", function () {
   const menuToggle = document.querySelector(".menu-toggle");
   const mobileNav = document.querySelector(".mobile-nav");
 
   if (menuToggle && mobileNav) {
     menuToggle.addEventListener("click", function () {
-      // alterna a visibilidade do menu
       mobileNav.classList.toggle("show");
     });
 
-    // fecha o menu ao clicar em um link
+    // Fecha ao clicar em um link
     const mobileLinks = mobileNav.querySelectorAll("a");
     mobileLinks.forEach((link) => {
       link.addEventListener("click", function () {
@@ -53,33 +46,52 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-// 🔷 Destacar o link ativo no menu mobile
+
+// 🔷 DESTACAR O LINK ATIVO NO MENU MOBILE
 document.addEventListener("DOMContentLoaded", function () {
   const mobileLinks = document.querySelectorAll(".mobile-nav a");
 
-  mobileLinks.forEach(link => {
+  mobileLinks.forEach((link) => {
     link.addEventListener("click", function () {
-      mobileLinks.forEach(l => l.classList.remove("active"));
+      mobileLinks.forEach((l) => l.classList.remove("active"));
       this.classList.add("active");
     });
   });
 });
 
+// 🔷 BOTÃO "VOLTAR AO TOPO"
+const btnTop = document.getElementById("btnTop");
 
-// Mostrar o botão de "voltar ao topo" ao rolar
 window.addEventListener("scroll", function () {
-  const btnTop = document.getElementById("btnTop");
-  if (window.scrollY > 200) {
+  if (window.scrollY > 300) {
     btnTop.style.display = "block";
   } else {
     btnTop.style.display = "none";
   }
 });
 
-// Função que rola para o topo suavemente
 function scrollToTop() {
   window.scrollTo({
     top: 0,
     behavior: "smooth",
   });
 }
+
+// 🔷 ANIMAÇÃO FADE-UP NOS CARDS
+document.addEventListener("DOMContentLoaded", function () {
+  const fadeElements = document.querySelectorAll(".fade-up");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.1 }
+  );
+
+  fadeElements.forEach((el) => observer.observe(el));
+});
