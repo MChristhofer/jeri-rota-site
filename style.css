@@ -1,320 +1,99 @@
-/* 🔷 RESET BÁSICO */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* =========================
+   HOME PREMIUM – ESSENZA STYLE
+========================= */
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* 🔷 TOPO PRETO COM CONTATOS */
-.top-bar {
-  background-color: #000;
-  color: #fff;
-  font-size: 14px;
-  z-index: 1030;
-}
-
-/* 🔷 CABEÇALHO PRINCIPAL */
-.main-header {
-  background-color: #fff;
-  z-index: 1020;
-  transition: box-shadow 0.3s ease;
-  border-bottom: 1px solid #eee;
-}
-
-/* 🔷 NAVEGAÇÃO DESKTOP */
-.main-nav .nav-link {
+.hero-premium {
+  min-height: 90vh;
+  background: url("assets/hero-premium.jpg") center/cover no-repeat;
   position: relative;
-  padding-bottom: 4px;
-  color: #333;
-  font-weight: 500;
-  transition: color 0.3s ease;
 }
 
-.main-nav .nav-link::after {
+.hero-premium::after {
   content: "";
   position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: #ec8714; /* Laranja */
-  transition: width 0.3s ease;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
 }
 
-.main-nav .nav-link:hover::after,
-.main-nav .nav-link.active::after {
-  width: 100%;
-}
-
-.main-nav .nav-link.active {
-  color: #ff9800; /* laranja vibrante */
-}
-
-/* 🔷 MENU HAMBÚRGUER (MOBILE) */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-toggle img {
-  width: 28px;
-}
-/* 🔷 ESTILO DO LINK ATIVO NO MENU MOBILE */
-.mobile-nav .nav-link {
-  color: #333;
-  padding: 10px 0;
-  font-weight: 500;
-  transition: color 0.3s ease, background-color 0.3s ease;
-}
-
-.mobile-nav .nav-link:hover {
-  background-color: #f9f9f9;
-  color: #f47c00;
-}
-
-.mobile-nav .nav-link.active {
-  background-color: #f47c00; /* Laranja da sua identidade */
-  color: #fff !important;
-  border-radius: 4px;
-}
-/* 🔷 MENU MOBILE COM ANIMAÇÃO SUAVE */
-.mobile-nav {
-  display: none;
-  flex-direction: column;
-  text-align: center;
-  background: #fff;
-  width: 100%;
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.mobile-nav.show {
-  display: flex !important;
-  max-height: 500px; /* altura suficiente para o conteúdo */
-  opacity: 1;
-}
-
-/* 🔷 HERO - IMAGENS TELA CHEIA */
-.carousel-item img {
-  height: 100vh; /* Altura total da tela */
-  object-fit: cover; /* Imagem cobre sem distorcer */
-}
-
-.carousel-caption {
-  bottom: 0;
-  top: 0;
-  padding: 2rem;
-}
-
-/* 🔷 RODAPÉ */
-footer {
-  background-color: #f8f9fa;
-  font-size: 14px;
-}
-
-/* 🔷 WHATSAPP FLUTUANTE */
-.float-whatsapp img {
-  z-index: 1050;
-}
-
-/* 🔷 RESPONSIVO */
-@media (max-width: 768px) {
-  .main-nav {
-    display: none !important;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
-
-/* 🔷 ANIMAÇÃO DA LOGO AO PASSAR O MOUSE */
-@keyframes balanco-lateral {
-  0% { transform: translateX(0); }
-  25% { transform: translateX(5px); }
-  50% { transform: translateX(-5px); }
-  75% { transform: translateX(3px); }
-  100% { transform: translateX(0); }
-}
-
-.logo img {
-  transition: transform 0.3s ease;
-}
-
-.logo img:hover {
-  animation: balanco-lateral 0.6s ease-in-out;
-}
-
-/* 🔷 BOTÃO RESERVA AO LADO DO MENU */
-.btn-primary {
-  background-color: #e91e63;
-  border: none;
-  padding: 10px 14px;
-  font-weight: bold;
-  color: #fff;
-  border-radius: 4px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #d81b60;
-  transform: scale(1.05);
-}
-
-/* 🔷 ANIMAÇÃO FADE-UP NOS CARDS */
-.fade-up {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: all 0.6s ease;
-}
-
-.fade-up.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* 🔷 BOTÃO "RESERVE ONLINE" */
-.btn-reserve {
-  background-color: #f47c00; /* Laranja vibrante */
-  color: #fff;
-  font-weight: bold;
-  padding: 10px 22px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  white-space: nowrap;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-reserve:hover {
-  background-color: #d96800;
-  transform: scale(1.05);
-}
-
-/* 🔷 HERO COM BANNERS DIFERENTES POR PÁGINA */
-.hero-sobre,
-.hero-passeios,
-.hero-contato,
-.hero-politica,
-.hero-transfer,
-.hero-blog,
-.hero-hospedagem {
-  background-size: cover;
-  background-position: center;
-  height: 300px;
+.hero-text {
   position: relative;
+  max-width: 600px;
+  color: #fff;
 }
 
-.hero-politica { background-image: url('assets/bannerpolitica.jpg'); }
-.hero-sobre { background-image: url('assets/bannersobre.jpg'); }
-.hero-passeios { background-image: url('assets/banner-passeios.jpg'); }
-.hero-blog { background-image: url('assets/banner-blog.jpg'); }
-.hero-contato { background-image: url('assets/banner-contato.jpg'); }
-.hero-transfer { background-image: url('assets/banner-transfer.jpg'); }
-.hero-hospedagem { background-image: url('assets/banner-hospedagem.jpg'); }
-
-.hero-sobre .overlay,
-.hero-hospedagem .overlay,
-.hero-politica .overlay,
-.hero-passeios .overlay,
-.hero-contato .overlay,
-.hero-blog .overlay,
-.hero-transfer .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+.hero-text h1 {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 24px;
 }
 
-.hero-sobre h1,
-.hero-hospedagem h1,
-.hero-politica h1,
-.hero-passeios h1,
-.hero-contato h1,
-.hero-transfer h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: white;
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 14px 36px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-hero:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* ROTAS */
+.routes-premium {
+  padding: 100px 0;
+  background: #f7f6f3;
+}
+
+.route-item h3 {
+  font-size: 22px;
+  font-weight: 500;
+  color: #0a2342;
+  margin-bottom: 8px;
+}
+
+.route-item span {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ABOUT */
+.about-premium {
+  padding: 80px 0;
+}
+
+.about-premium p {
+  max-width: 800px;
+  margin: auto;
   text-align: center;
+  font-size: 17px;
+  line-height: 1.8;
+  color: #444;
 }
 
-/* 🔷 SELLOS DE PAGAMENTO E SEGURANÇA */
-.footer .selos-pagamento {
-  max-width: 420px;
-  margin: 20px auto 0;
-  display: block;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* CTA FINAL */
+.cta-premium {
+  padding: 100px 0;
+  background: #0a2342;
+  color: #fff;
 }
 
-/* 🔷 CARDS MODERNOS COM ANIMAÇÃO E ZOOM */
-.card-modern {
-  border: none;
-  border-radius: 16px;
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  max-width: none;
+.cta-premium h2 {
+  font-weight: 400;
+  margin-bottom: 40px;
 }
 
-.card-modern:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card-modern .card-img-top {
-  transition: transform 0.3s ease;
-}
-
-.card-modern:hover .card-img-top {
-  transform: scale(1.05);
-}
-
-.card .rounded-circle {
-  font-size: 1.2rem;
-  font-family: 'Segoe UI', sans-serif;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-}
-
-.card {
-  border-radius: 16px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.card .card-img-top {
-  border-top-left-radius: 16px;
-  border-top-right-radius: 16px;
-}
-
-.card .card-body {
-  border-bottom-left-radius: 16px;
-  border-bottom-right-radius: 16px;
-  background-color: #fff;
-}
-
-/* 🔷 TAMANHO FIXO PARA IMAGENS DOS CARDS DE TRANSFER */
-.card-modern img[alt="Transfer Aeroporto JJD"],
-.card-modern img[alt="Transfer Fortaleza"] {
-  width: 690px;
-  height: 518px;
-  object-fit: cover;
-  display: block;
-  margin: 0 auto;
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 34px;
+  }
 }
